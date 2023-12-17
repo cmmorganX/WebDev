@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--create a simple contact form-->
+  <meta charset="UTF-8">
+  <meta name="description" content="contact form">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="contact form">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact Form</title>
+<style type="text/css">
+
+*{
+
+  margin:0;
+  padding:0;
+}
+
+body {
+
+font-family: Helvetica, Arial, sans-serif;
+font-size:125%;
+color:#333;
+background-color:#9bd;
+}
+
+#formcontainer {
+      background-color: lightgray;
+      width:800px;
+      margin:10px auto;
+      padding:20px;
+      border: 2px solid black;
+      border-radius: 15px;	
+}
+
+legend {
+  border-bottom: 2px dotted purple;
+  width:100%;
+  margin-bottom: 15px;
+
+}
+
+fieldset {
+
+padding:5px;
+border:1px solid black;
+margin:20px;
+
+}
+
+input[type=submit], input[type=reset]  {
+
+color:white;
+background-color: black;
+padding: 6px;
+border-radius: 50px;
+width:100px;
+margin-right: 30px;
+}
+input[type=submit] {
+margin-left: 255px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="formcontainer">
+<fieldset>
+  <form id="contact_form" method="post" action="">
+    <legend>Contact Us!</legend>
+    <p>We would LOVE to hear from you! Please send us a message using the form below.</p>
+
+    <div>
+      <label>First Name</label>
+      <input id="lastname" name="lastname" type="text">
+    </div>
+
+    <div>
+			<label>Email Address</label>
+			<input id="Email" name="Email" type="text" placeholder="name@anymail.com">
+		</div>
+
+		<div>
+			<label>Topic</label>
+			<select id="Topic" name="Topic" type="text">
+					<option value="web">Web Development Services</option>
+					<option value="ux/ui">UX/UI Design</option>
+					<option value="SQL">Cloud Computing</option>
+					<option value="resume">Recruitment</option>
+					<option value="other">Other</option>
+			</select>
+		</div>
+
+		</fieldset>
+			<fieldset>
+		<div>
+			<label>Please type your message.</label>
+			<textarea id="message" name="message" rows="5" cols="40"></textarea>
+		</div>
+	</fieldset>
+		<div>
+			<input type="submit" id="button" name="button" value="Submit">
+			<input type="reset" id="button" name="button" value="Reset">
+
+		</div>
+
+
+		</form><!--end of form-->
+
+</form>
+</div><!--closing the form container-->
+
+</body>
+</html>
