@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Styleing for single page layout */
+
+
+h1 {
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	text-align:center;
+	padding:10px;
+}
+
+h2, h3, h4 {
+	
+	font-family: Helvetical, Ariel, sans-serif;
+	margin-top:5px;
+}
+
+p {
+	font-family: Helvetical, Ariel, sans-serif;
+	margin-top:5px;
+	text-indent:15px;
+	
+}
