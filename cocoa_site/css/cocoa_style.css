@@ -1,0 +1,203 @@
+/* CSS Styling for Cocoa sites*/
+
+@font-face {
+    font-family: 'ultraregular';
+    src: url('../fonts/Ultra-webfont.eot');
+    src: url('../fonts/Ultra-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Ultra-webfont.woff2') format('woff2'),
+         url('../fonts/Ultra-webfont.woff') format('woff'),
+         url('../fonts/Ultra-webfont.ttf') format('truetype'),
+         url('../fonts/Ultra-webfont.svg#ultraregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+body{
+
+	background-color:rgb(242, 216, 250);
+}
+
+h1{
+
+	font-family: 'ultraregular';
+	color:#F3E25D;
+	text-align:center;
+	background-color:#472766;
+	letter-spacing: 3px;
+	padding: 20px;
+    margin-top: 20px;
+    margin-right: 60px;
+    float:none;
+    border-top: 5px dotted white;
+}
+
+h2{
+
+	font-family: 'ultraregular';
+	color:purple;
+	text-align:center;
+	letter-spacing: 3px;
+	padding: 20px;
+    margin-top: 20px;
+    margin-right: 60px;
+    float: none;
+    border-top: 5px dotted white;
+}
+
+h3{
+
+	font-family: 'ultraregular';
+	color:purple;
+	text-align:center;
+	letter-spacing: 3px;
+	padding: 20px;
+    margin-top: 20px;
+    margin-right: 60px;
+    float: none;
+    border-top: 5px dotted white;
+}
+
+h4{
+
+	font-family: 'ultraregular';
+	color:#680887;
+	text-align:center;
+	letter-spacing: 3px;
+	padding: 20px;
+    margin-top: 20px;
+    margin-right: 60px;
+    float:none;
+    border-top: 5px dotted white;
+}
+
+
+p{
+
+	font-family: 'Alegreya', serif;
+	color:#45244F;
+	text-align:center;
+	font-size:large
+
+}
+
+nav {
+
+	background-color:#472766;
+	line-height:200%;
+
+}
+
+nav li {
+
+	display:inline;
+	padding-right:40px;
+
+}
+
+nav a {
+
+	color:white;
+
+}
+
+nav a:link, nav a:visited {
+
+	color:#c79dd7;
+	text-decoration:none;
+}
+
+nav a:hover {
+
+	color:#ef4f91;
+
+}
+
+.p::first-letter {
+  color:#ef4f91;
+  font-size: xx-large;
+}
+
+
+.ulfacts {
+
+  list-style-image: url('../images/cocoabean_bullet.gif');
+  font-family: 'Berkshire Swash', cursive;
+	color:#3c2f2f;
+	text-align:left;
+	background: #ff93ac;
+    padding: 20px;
+
+}
+
+/* unvisited link */
+a:link, a:active {
+  color: purple;
+}
+
+/* visited link */
+a:visited {
+  color: pink;
+}
+
+/* mouse over link */
+a:hover {
+  color: yellow;
+}
+
+
+
+img {
+
+    border:5px solid;
+    padding: 10px;
+    margin:15px;
+    border-color: #563963;
+
+}
+
+
+.noborder {
+
+    border:none;
+    padding:0;
+    margin:0;
+
+}
+
+
+.floatright {
+
+    float:right;
+
+}
+
+.floatleft {
+
+    float:left;
+
+}
+
+.floatclear {
+
+    clear:both;
+
+}
+
+.nothing {
+
+	float: none;
+	clear:both;
+	border:none;
+    padding:0;
+    margin:0;
+
+}
+
+footer {
+
+	float: none;
+	clear:both;
+}
