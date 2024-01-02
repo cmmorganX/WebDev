@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* CSS Structure for single column layout */
+
+	
+/*  The universal selector is used to apply to all. Some browsers, bu default, add a margin and padding value. This is undesirable in our layout. The margin and properties value of 0 then "zeros out" any default browser value.*/
+
+*  { 
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+}   
+	
+body	 {
+		background-image:url("../images/geometric-leaves.png");
+		}
+			
+#container {
+
+	width:964px;
+	border: 2px solid #587F27;
+	margin: 0.5% auto;
+	background-color: #7EB639;
+	border-radius: 25px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, .5)
+}
+
+header img {
+
+	border-radius: 25px;
+}
+
+header {
+
+	background-color:white;
+	text-align: center;
+	border-radius: 22px;
+}
+
+main {
+	background-color: #7EB639;
+	padding:10px;
+	border-top-left-radius: 22px;
+	border-top-right-radius: 22px;
+
+}
+
+footer {
+	color:white;
+	background-color: green;
+	text-align: center;
+	padding:10px;
+	border-bottom-left-radius: 22px;
+	border-bottom-right-radius: 22px;
+}
+
+
+
+
+
+
+
+
+

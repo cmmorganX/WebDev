@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="koala,images,gallery,image gallery,KBNIC,koalabear">
+  <meta name="author" content="Courtney Morgan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+  <title>Koala Image Gallery</title>
+
+  <link rel="stylesheet" href="css/koala_style.css">
+  <link href="structure_koala.css" rel="stylesheet" type="text/css">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: "Helvetica", Arial, sans-serif;
+}
+
+#container {
+  padding: 0.9em;
+  width:90%;
+  margin: 2em;
+  border-radius: 15px;
+}
+
+.flex-containera {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  background-color: lightblue;
+  border:2px groove lightgray;
+  border-radius: 15px;
+}
+
+.flex-containerb {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  border-radius: 15px;
+}
+
+header {
+  width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+    }
+
+nav  {
+      width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    }
+
+.column {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+figure {
+      border:1px solid gray;
+      background-color: lightyellow;
+      padding:1em;
+      margin:1em;
+      border-radius: 15px;
+  }
+
+figure img {
+  border-radius:15px;
+  border:2px groove lightgray;
+}
+
+figcaption {
+      font-size: 0.7em;
+      margin-bottom:1.2em;
+      text-align: center;
+}
+
+footer  {
+		width:100%;
+		color:white;
+		background-color:black;
+		text-align:center;
+		padding:1.2em;
+		border-bottom-left-radius:15px;
+		border-bottom-right-radius:15px
+		}
+
+@media screen and (max-width:700px)
+  {
+    .flex-container, nav ul, header, footer {
+      flex-direction:column;
+    }
+
+    #container
+    {
+      width:100%;
+      margin:0;
+    }
+
+    .flex-containera {
+    background-color: purple;
+  }
+
+</style>
+</head>
+<body>
+
+<div id="container">
+<div class="flex-containerb">
+
+ <header>
+	<img class="noborder" src="images/koala_gallery_banner.jpg" alt="Koala Image Gallery Banner">
+
+<h1>Image Gallery</h1>
+</header>
+
+<nav>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="faq.html">FAQ</a></li>
+  <li><a href="save_koalas.html">Save Koalas</a></li>
+  <li><a href="koala_gallery.html">Gallery</a></li>
+  <li><a href="adopt.html">Adopt</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+</ul>
+</nav>
+
+</div><!--close header container-->
+
+	<div class="flex-containera">
+
+<!-- Photo Gallery -->
+
+    		<div class="column">
+	<figure>
+      <img class="noborder" src="images/grant.jpg">
+        <figcaption>Grant</figcaption>
+        </figure>
+
+	<figure>
+      <img class="noborder" src="images/miffy.jpg">
+        <figcaption>Miffy</figcaption>
+        </figure>
+
+	<figure>
+      <img class="noborder" src="images/henry.jpg" >
+        <figcaption>Henry</figcaption>
+        </figure>
+
+			</div class="column"><!--close image column-->
+    		<div class="column">
+
+	<figure>
+      <img class="noborder" src="images/niley.jpg" >
+        <figcaption>Niley</figcaption>
+        </figure>
+
+	<figure>
+      <img class="noborder" src="images/jilley.jpg">
+        <figcaption>Jilley</figcaption>
+        </figure>
+
+	<figure>
+      <img class="noborder" src="images/jams.jpg">
+        <figcaption>Jams</figcaption>
+        </figure>
+
+			</div class="noborder" class="column"><!--close image column-->
+    		<div class="column">
+
+	<figure>
+      <img class="noborder" src="images/lucy.jpg">
+        <figcaption>lucy</figcaption>
+        </figure>
+
+	<figure>
+      <img class="noborder" src="images/ella.jpg">
+        <figcaption>Ella</figcaption>
+        </figure>
+
+	<figure>
+      <img class="noborder" src="images/nooka.jpg">
+        <figcaption>Nooka</figcaption>
+        </figure>
+
+			<div class="column">
+
+</div><!--close column div-->
+</div><!--close flex-container div-->
+
+<footer>
+	<p>Thank you for looking at our gallery!</p>
+</footer>
+
+</div><!--close container div-->
+
+
+
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Adopt A Koala</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+
+<!--
+	Author: Courtney Morgan
+	Date: November 15, 2020
+	-->
+ <meta name="description" content="">
+ <meta name="keywords" content="">
+ 
+ <!-- REMEMBER TO ADD YOUR CSS FILE LINKS!-->
+<link rel="stylesheet" href="css/koala_style.css">
+
+ 
+ <!--Complete (fill in) the flex CSS properties that are blank to make the form look like the example.jpg file provided.-->>
+
+	<style type="text/css">
+	
+.banner img
+{width:100%;}
+ 	
+ .flex-container  {
+			display:flex;
+			flex-direction:column;
+			width:90%;
+			margin:0 auto;}
+							
+
+form {		
+			display:flex;
+			flex-direction:column; 
+			background-color:#BDCFDB;
+			max-width:800px;
+			width:90%;
+			padding:1.2em;
+			margin:auto;
+			border:thin solid gray;
+			border-radius:10px;
+}
+		
+ 	
+    .flex-form {
+				display:flex;
+				flex-direction:row;
+				margin-bottom:0.5em;
+				}
+
+
+
+  .flex-form label {
+	 
+  					text-align: right ;
+  					flex-basis: 9em;
+  					margin-top: 0.2em;
+  					margin-right:0.2em;
+  				}	
+  				
+  .flex-form input, select, textarea {
+  					flex:3;
+  					justify-content: space-around;
+  					margin-right:2em;
+  					}
+  					
+  					
+  	.flex-radio  {
+  				display:flex;
+  				flex-direction:row;
+  				justify-content:center;
+  				margin-left:1.8em;
+  				margin-top:1.2em;
+  				margin-bottom:1.2em;
+  				}
+  				
+
+  				
+  	.flex-radio  label {
+  			margin-right:1.3em;}
+	 
+	.flex-buttons  {
+				display:flex;
+				justify-content:center;
+				margin:0.1em;
+				}
+	 
+.flex-buttons input {
+	margin:0.3em;
+}
+	 
+textarea {
+		height:25px;
+		border-style: groove;
+		}
+		
+fieldset {	display:flex;
+			flex-direction:column;
+			margin:0.5em;
+			padding:0.5em;
+			}
+			
+	 /* End flex css */			
+
+section  {
+			padding:0.5em;
+			}
+	
+@media screen and (max-width:700px)
+	{
+		.flex-container, nav ul, header, footer {
+			flex-direction:column;
+		}
+
+		#container
+		{
+			width:100%;
+			margin:0;
+		}
+
+		.flex-form {
+    background-color: pink;
+	}
+	 
+	</style>
+	
+</head>
+<body><!-- comment tags are wrapped around the html tags to help you find the html that have to do with flex. Should be no need to change the html -->
+<!---->
+<div class="flex-container">
+<!---->
+
+<div class="banner"><img src="images/koalabear_contactus_banner.jpg" alt="Adopt a Koala Banner"></div>
+
+<header>
+<h1>Koala Bear National Information Center</h1>
+</header>
+	
+<nav>
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="faq.html">FAQ</a></li>
+	<li><a href="save_koalas.html">Save Koalas</a></li>
+	<li><a href="koala_gallery.html">Gallery</a></li>
+	<li><a href="adopt.html">Adopt</a></li>
+	<li><a href="contactus.html">Contact Us</a></li>
+</ul>
+</nav>
+
+<section>
+
+<h2>Adopt A Koala!</h2>
+<p>When you adopt a Koala, you receive a beautiful personalised adoption certificate with a photo of your Koala, a welcome letter, Koala stickers, and more. And if you are in the area you can drop in and visit the adorable Koala you adopted! *(Cost of Koala adoption does not include park admission fees).</p>
+
+</section>
+
+<section>
+  	<form method="post" action="#">
+	
+			
+	<p>Yes! I am interested in adopting a Koala bear. Please  send me information.</p>
+
+	<fieldset>
+	<legend>Contact Information</legend>
+<!----><div class="flex-form">	<!---->
+				<label for="firstName">First Name: </label>
+				<input type="text" name="firstName" id="firstName" placeholder="first name">
+			</div>
+<!----><div class="flex-form">	<!---->
+				<label for="lastName">Last Name: </label>
+				<input type="text" name="lastName" id="lastName" placeholder="last name">
+			</div>
+<!----><div class="flex-form">	<!---->
+				<label for="address">Street Address: </label>
+				<input type="text" name="address" id="address" placeholder="street address">
+				</div>
+		
+<!----><div class="flex-form">	<!---->
+				<label for="city">City: </label>
+				<input type="text" name="city" id="city" placeholder="city name">
+				</div>
+
+<!----><div class="flex-form"><!---->
+	<label for="state">State: </label>	
+	<select name="state">
+	<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+</select>
+</div>
+	
+	
+<!----><div class="flex-form">	<!---->
+				<label for="Zip">Zip: </label>
+				<input type="text" name="zip" id="zip">
+			</div>
+		
+<!----><div class="flex-form">	<!---->
+				<label for="emailAddress">Email Address: </label>
+				<input type="text" name="emailAddress" id="emailAddress" placeholder="name@anywhere.com">
+				</div>
+		
+			
+<!----><div class="flex-form">	<!---->
+				<label for="phone">Phone: </label>
+				<input type="text" name="phone" id="phone" placeholder="123-456-7890">
+		</div>
+
+
+	<!----><div class="flex-radio"><!---->
+				  <div>
+					<input type="radio" name="phonetype" id="cell" value="cell" checked>
+					<label for="photoButton">Cell</label>
+				  </div>
+				  <div>
+					<input type="radio" name="phonetype" id="home" value="home">
+					<label for="grdButton">Home</label>
+				  </div>
+				  <div>
+					<input type="radio" name="phonetype" id="work" value="work">
+					<label for="wdvButton">Work</label>
+				  </div>
+				 </div>				
+			
+		</fieldset> 
+		<fieldset>
+			<legend>Adoption Options</legend>
+			<p> Choose a category of a Koala that interests you. Check all that apply</p>
+
+<!----><div class="flex-radio"><!---->
+		
+				<div>
+					<input type="checkbox" name="joey" id="joey" value="joey" checked>
+					<label for="joey">Joeys</label>
+				  </div>
+				  
+				  <div>
+					<input type="checkbox" name="adult" id="adult" value="adult">
+					<label for="adult">Adults</label>
+				  </div>
+				  
+				  <div>
+					<input type="checkbox" name="mum" id="mum" value="mum">
+					<label for="mum">Mum & Joey pairs</label>
+				  </div>
+				  
+				  <div>
+					<input type="checkbox" name="wild" id="wild" value="wild">
+					<label for="wild">In the Wild</label>
+				  </div>
+				  
+				</div><!--close flex-radiokoala div-->	
+			
+
+
+	<p style="text-align:center;">Questions? Send us a message.</p>
+<!----><div class="flex-form"><!---->
+				<label for="inputMessage">Message: </label>
+				<textarea name="inputMessage" id="inputMessage">
+				</textarea>
+			</div>
+	
+		</fieldset>	
+
+<!----><div class="flex-buttons"><!---->
+				<input type="submit" value="Submit">
+				<input type="reset" value="Reset">
+			</div>
+			
+		</form>
+</section>
+<footer>
+<p>&trade; Trademark 2018 All rights reserved. Australian Koala Foundation</p>
+
+<a href="https://www.savethekoala.com">
+
+</a>
+</footer>
+</div><!--close flex container-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

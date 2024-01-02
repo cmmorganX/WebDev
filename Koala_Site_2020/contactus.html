@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Frequently Asked Questions</title>
+<!-- author: Courtney Morgan
+	Date: August 31, 2020-->
+
+<meta charset="UTF-8">
+  <meta name="description" content="Contact Us about Adopting a Koala">
+  <meta name="keywords" content="koala, wildlife, conservation, Australia, endangered, KBNIC, volunteer, donation, sponsor, adoption">
+  <meta name="author" content="Courtney Morgan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/koala_style.css">
+<link href="structure_koala.css" rel="stylesheet" type="text/css">
+
+<style>
+	* {
+		box-sizing: border-box;
+		margin:0;
+		padding:0;
+		}
+		
+	body  {
+			font-family: 'Shrikhand', cursive;
+			font-size:115%;
+			color: #333;
+			background-color:#cfdac2;
+			}
+			
+	form  {
+			background-color: #e1f9c4;
+			width: 800px;
+			margin:auto;
+			padding: 10px;
+			border: 2px solid black;
+			border-radius: 15px;
+					}
+	legend  {
+			width: 100%;
+			border-bottom: 3px solid green;
+			padding-bottom: 5px;
+			margin-bottom: 15px;
+			font-size:1.3em;
+			}
+			
+	fieldset  {
+				width: 25em;
+				margin: 35px, 10px;
+				border:hidden;
+				}
+				
+	fieldset div  {
+					margin: 20px, 5px;
+					padding: 40px, 10px;
+					}
+					
+					
+	input, select  {
+					font-size: 1.1em;
+					padding: 10px 5px 4px;
+					border-radius: 5px;
+					margin-top:5px;
+							}
+							
+	label  {
+			width: 10em;
+			text-align: right;
+			padding-right: 0.5em;
+			}
+			
+			
+	input[type="checkbox"], input[type="radio"] {
+	  width: auto;
+	  margin-left: 3em;
+	}
+	
+	input[type="checkbox"] ~ label, input[type="radio"] ~ label {
+	  width: auto;
+	  text-align: left;
+	  padding-left: 0.4em;
+	}
+	
+			
+	input[type=submit], input[type=reset] {
+								 color:white;
+								 background-color: green;
+								 border-radius: 200px;
+								 padding: 6px;
+								 width: 100px;
+								 margin-right: 30px;
+									}
+									
+	input[type=submit]  {
+						margin-left: 25px;
+						}
+
+
+</style>
+
+</head>
+
+<body>
+	<div id="container">	
+
+<section is="top"></section>
+
+
+<nav>
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="faq.html">FAQ</a></li>
+	<li><a href="save_koalas.html">Save Koalas</a></li>
+	<li><a href="koala_gallery.html">Gallery</a></li>
+	<li><a href="adopt.html">Adopt</a></li>
+	<li><a href="contactus.html">Contact Us</a></li>
+</ul>
+</nav>
+
+<img src="images/koalabear_contactus_banner.jpg" alt="Koala Contact Us Banner" class="banner">
+
+<main>
+
+<h3>Email us at KBNIC@koalafoundation.com</h3>
+
+
+	<form id="contact_form" method="post" action="form_response_basic.php">
+	<legend>Ask Us Anything at KBNIC!</legend>
+	<p style="font-style:italic;">Please complete this form.</p>
+	
+	<fieldset>
+		<div>
+			<label for="firstname">First Name</label>
+			<input id="firstname" name="firstname" type="text">
+		</div>
+		
+		<div>
+			<label for="lastname">Last Name</label>
+			<input id="lastname" name="lastname" type="text">
+		</div>
+
+		<div>
+			<label for="question">Question</label>
+			<input id="question" name="question" type="text">
+		</div>
+
+		<div>
+			<label for="email">Email</label>
+			<input id="email" name="email" type="text">
+		</div>
+		 <p>Where do you live?</p>
+		 	<div>
+		 		<input id="aus" name="aus" type="radio">
+		 		<label>Australia</label>
+		 	</div>
+		 	<div>
+		 		<input id="usa" name="usa" type="radio">
+		 		<label>United States</label>
+		 	</div>
+		 	<div>
+		 		<input id="afr" name="afr" type="radio">
+		 		<label>Africa</label>
+		 	</div>
+		 	<div>
+		 		<input id="eur" name="eur" type="radio">
+		 		<label>Europe</label>
+		 	</div>
+		 	<div>
+		 		<input id="as" name="as" type="radio">
+		 		<label>Asia</label>
+		 	</div>
+		 		<div>
+		 		<input id="oth" name="oth" type="radio">
+		 		<label>Other</label>
+		 	</div>
+    		
+    		<div>
+      			<label for="pledge">How did you hear about us?</label>            
+     			<select id="pledge" name="pledge" style="font-size:0.9em;">
+       				<option value="website">Website</option>
+        			<option value="radio">Radio</option>
+        			<option value="friend">Friend</option>
+       				<option value="tv">TV</option>
+       				<option value="ad">Ad</option>
+      			</select>
+    		</div>
+    		
+    		 <p>Sign up to receive our newletters! Click all that apply.</p>
+    		 <div>
+    		 	<input id="news1" name="news1" type="checkbox">
+    		 	<label>Koala Times</label>
+    		 </div>
+    		 <div>
+    		 	<input id="news2" name="news2" type="checkbox">
+    		 	<label>Little Paws, Little Hearts</label>
+    		 </div>
+    		 <div>
+    		 	<input id="new3" name="news3" type="checkbox">
+    		 	<label>Get Green</label>
+    		 </div>
+    		 <div>
+    		 	<input id="news4" name="news4" type="checkbox">
+    		 	<label>Save the Koalas</label>
+    		 </div>
+    		  <div>
+    		 	<input id="news5" name="news5" type="checkbox">
+    		 	<label>Jungle Reforestation Project</label>
+    		 </div>
+</fieldset>
+		<div>
+			<input type="submit" id="button" name="button" value="Submit">
+			<input type="reset" id="button" name="button" value="Reset">
+		</div>
+
+	</div><!--close form container-->
+
+
+<P>DISCLAIMER: You are not paying to receieve a real Koala. The adoption is purely for sponsorship purposes. All funding goes to help Save the Koalas and to pay for the Koala Bear National Information Center. Thank you for understanding.</P>
+
+</main>
+
+<footer>
+   
+<p>&copy; Copyright 2018 All rights reserved. Australian Koala Foundation </p>
+
+<a href="http://www.savethekoala.com/" target="blank">Australia Koala Foundation</a>
+
+
+<p><a href="http://www.savethekoala.com/" target="blank"><img src="images/koala_logo.svg" alt="koala Logo" width="100" height="100" class="noborder"></a></p>
+
+<p>Click the link below to view a fact sheet about Koala Bears.</p>
+<p><a href="images/KoalasFactSheet.pdf" target="_blank">Fact Sheet</a></p>
+
+<a href="#top">Go to Top of Page</a>
+
+</footer>
+</div>
+</body>
+
+</html>
