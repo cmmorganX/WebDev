@@ -1,0 +1,227 @@
+/* CSS Styling for Homework and Index site*/
+
+@font-face {
+    font-family: 'bisonbold';
+    src: url('../fonts/bison-boldpersonaluse-webfont.woff2') format('woff2'),
+         url('../fonts/bison-boldpersonaluse-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: #042f73;
+    font-size: large;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    top: 0;
+    bottom: 100%;
+}
+
+nav li {
+
+    display: inline;
+    float: left;
+}
+
+nav a:link, nav a:visited {
+
+    display: block;
+    width: 120px;
+    background-color: #36d0d4;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+
+}
+
+nav a:hover, nav a:active {
+
+    background-color: #7eecc8;
+}
+
+body {
+  background-image:url("images/pawprint_bodybg.jpg");
+}
+
+
+img {
+
+    border:3px solid #09c9a7;
+    padding: 10px;
+    margin:25px;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.15);
+
+
+}
+
+
+h1{
+
+    font-family: 'bisonbold';
+    color:white;
+    text-align:center;
+    background-color:#41d0d3;
+    letter-spacing: 3px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: none;
+    border-top: 5px groove white;
+}
+
+h2{
+
+    font-family: 'bisonbold';
+    color:white;
+    text-align:center;
+    background-color:#3eabca;
+    letter-spacing: 3px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: none;
+    border-top: 5px groove white;
+}
+
+h3{
+
+    font-family: 'bisonbold';
+    color:white;
+    text-align:center;
+    background-color:#74c5f0;
+    letter-spacing: 3px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: none;
+    border-top: 5px groove white;
+}
+
+h4{
+
+    font-family: 'bisonbold';
+    color:white;
+    text-align:center;
+    background-color:#73649d;
+    letter-spacing: 3px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: none;
+    border-top: 5px groove white;
+}
+
+
+ul {
+  list-style: square inside url("images/summit_pawprint.gif");
+}
+
+.uldogfacts {
+
+  list-style-image: url('../images/summit_pawprint.gif');
+  font-family: 'bisonbold';
+    color:#042f73;
+    text-align:left;
+    font-size: x-large;
+    background: #41d0d3;
+    padding: 20px;
+
+}
+
+.olsummit {
+
+  font-family: 'bisonbold';
+    color: #042f73;
+    text-align: left;
+    font-size: x-large;
+    background: #68f0e5;
+    padding: 20px;
+}
+
+.p::first-letter {
+  color: #73649d;
+  font-size: xx-large;
+}
+
+.noborder {
+
+    border: none;
+    padding:0;
+    margin:0;
+    box-shadow: none;
+
+}
+
+.floatright {
+
+    float: right;
+
+}
+
+.floatleft {
+
+    float: left;
+
+}
+
+.floatclear {
+
+    clear: both;
+
+}
+
+.homework {
+
+    float: left;
+    border: none;
+    padding:0;
+    margin:0;
+    box-shadow: none;
+
+}
+
+.nothing {
+
+    border: none;
+    padding:0;
+    margin:0;
+    box-shadow: none;
+    clear: both;
+    float: none;
+}
+
+.center {
+
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.footercolor {
+
+  background-color: #68f0e5;
+
+}
+
+.headerthick {
+  padding: 60px;
+  text-align: center;
+  background: #68f0e5;
+  color: #68f0e5;
+  font-size: 30px;
+}
+
+body{
+
+    background-color: #c4faf5;
+}
