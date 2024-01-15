@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="flex layout website">
+  <meta name="keywords" content="HTML, CSS, Charles Dickens">
+  <meta name="Courtney Morgan" content="Flexbox">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Scratch Flexbox Layout</title>
+
+<style>
+
+body  {
+		background-color:#F0B7A4;
+		}
+
+#body-container {
+			width:87%;
+			font-family:Courier New, Courier New, monospace;
+			color:#305F72;
+			margin: 20px auto;
+			background-color:#F18C8E;
+			border:2px dotted white;
+			border-radius:10px;
+		}
+
+header {	
+			display:flex;
+			flex-wrap: wrap;
+			justify-content:space-around;
+			background-color:#F18C8E;
+			padding:1em;
+			border-top-left-radius:10px;
+			border-top-right-radius:10px;
+		}
+
+nav  {
+			color:#568EA6;
+			background-color: #305F72;
+			padding:0.09em;
+			font-size:0.9em;
+		}
+
+nav ul{
+			display:flex;
+			justify-content:space-around;
+		}
+		
+nav ul li {
+			list-style-type:none;	
+			margin-right:2em;	
+		}
+		
+nav a 	{
+		color:white;
+		text-decoration:none;
+		}
+
+nav a:hover {
+			list-style-type:none;	
+			color:#F0B7A4;
+			}
+
+.bodyrow {
+	display:flex;
+	border-top:1px dotted white;
+	border-bottom:1px dotted white;
+}
+
+.center {
+	justify-content: center;
+}
+
+main {
+	color:#305F72;
+    background-color:#F0B7A4;
+    padding: 2em;
+    justify-content: center;
+    border-right:1px dotted white;
+    border-left:1px dotted white;
+    order:2;
+    flex:5;
+}
+
+#sidebar1 {
+	color:white;
+    background-color: #568EA6;
+    justify-content: center;
+    padding: 2em;
+    order:1;
+    flex:5;
+}	
+#sidebar2 {
+	color:white;
+    background-color: #568EA6;
+    justify-content: center;
+    padding: 2em;
+    order:3;
+    flex:5;
+}	
+
+footer  {
+		color:white;
+		background-color:#F18C8E;
+		text-align:center;
+		padding:1em;
+		border-bottom-left-radius:10px;
+		border-bottom-right-radius:10px
+		}
+
+@media screen and (max-width:700px)
+  {
+    .body-container, .bodyrow, nav ul, header, footer {
+      flex-direction:column;
+    }
+
+    #container
+    {
+      width:100%;
+      margin:0;
+    }
+
+    main {
+    background-color: red;
+  }
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: red;
+  }
+
+/* If the screen size is 768px or less, set the font-size of <div> to 25px */
+@media only screen and (max-width: 768px) {
+  div.example {
+    font-size: 25px;
+  }
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="body-container">
+
+	<header>
+		 <h1>A Tale of Two Cities</h1>
+		 <h2>A Selection</h2>
+		</header>
+		
+		<nav>
+		  <ul>  
+			<li><a href="">Home</a></li>  
+			<li><a href="">Library</a></li>
+			<li><a href="">Books</a></li> 
+			<li><a href="">Shelves</a></li> 
+			<li><a href="">Checkout</a></li>  
+		  </ul>
+		</nav>
+
+<div class="bodyrow">
+<img src="images/charles_dickens_banner.jpg" alt="Tale of Two Cities Book Cover Banner" width=100% height=100%>
+</div><!--banner close div-->
+
+<div class="bodyrow">
+
+<main>
+	<h3>To Win</h3>
+<p>All these things, and a thousand like them, came to pass in and close upon the dear old year one thousand seven hundred and seventy-five. Environed by them, while the Woodman and the Farmer worked unheeded, those two of the large jaws, and those other two of the plain and the fair faces, trod with stir enough, and carried their divine rights with a high hand. Thus did the year one thousand seven hundred and seventy-five conduct their Greatnesses, and myriads of small creatures--the creatures of this chronicle among the rest--along the roads that lay before them.</p>
+
+<img src="images/bigbird.png" alt="A Colorful Engraving of a Large Bird">
+</main>
+
+<div id="sidebar1">
+	<h3>We All Want</h3>
+
+<img src="images/quill_wax.png" alt="A Quill, A Rolled Parchment with Wax Seal, and Inkwell next to Wax and Seal">
+
+<p>It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.</p>
+</div> <!--close sidebar1-->
+
+<div id="sidebar2">
+	<h3>In the End</h3>
+
+<img src="images/dickens_blushing.png" alt="A Blushing Charles Dickens in Pink">
+
+<p>Defarge and the three glanced darkly at one another. The looks of all of them were dark, repressed, and revengeful, as they listened to the countryman's story; the manner of all of them, while it was secret, was authoritative too. They had the air of a rough tribunal; Jacques One and Two sitting on the old pallet-bed, each with his chin resting on his hand, and his eyes intent on the road-mender; Jacques Three, equally intent, on one knee behind them, with his agitated hand always gliding over the network of fine nerves about his mouth and nose; Defarge standing between them and the narrator.</p>
+</div><!--close sidebar2-->
+
+</div><!--closes bodyrow-->
+
+<footer>
+<p>Although a skillful flatterer is a most delightful companion if you have him all to yourself, his taste becomes very doubtful when he takes to complimenting other people. – Charles Dickens</p>
+
+</footer>
+</div> <!--closes overall container-->
+
+</body>
+</html>
+
