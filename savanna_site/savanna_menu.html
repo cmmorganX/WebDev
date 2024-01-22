@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Savanna's Coffee House Menu</title>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Savanna's Coffee House Menu">
+  <meta name="keywords" content="Savanna's Coffee House, MSU, coffee, expresso, sandwiches, soup, menu, cafe, restaurant, coffee shop, coffee house, hot drinks, cold drinks, live entertainment, live bands, event venue, St. Paul, Minnesota, Campus town, MSU coffee shop, St. Paul coffee shop, menu, food, food options, menu online, online ordering">
+  <meta name="author" content="Courtney Morgan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/savanna_style.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<head>
+<style>
+
+h1 {
+  color:#ff9923;
+}
+
+h2 {
+  color:#e5c592;
+}
+
+h4 {
+  color:#e8b178;
+}
+
+h5 {
+  color:#358f4f;
+}
+
+.row {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.col-sm-12, .col-sm-3, .col-sm-9 {
+  border-bottom:1px solid #af7047;
+  background-color: #37261f;
+  text-align: center;
+  justify-content: center;
+  padding-top:0.6em;
+  padding-bottom:0.5em;
+  padding-left:0.4em;
+  padding-right:0.5em;
+ }
+
+.col-sm-12 {
+  color:#e5c592;
+  justify-content: space-around;
+  padding:10px;
+}
+
+.col-sm-3 {
+  padding-left:0.3em;
+  padding-bottom:0.3em;
+}
+
+.col-sm-9 {
+  color:#e5c592;
+  justify-content: center;
+  font-size: 150%;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+footer {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #dc7d24;
+  text-align: center;
+  color:#ccdbb0;
+  width:100%
+  border-top:2px solid #af7047;
+  display: flex;
+  justify-content: space-around;
+  padding-left:4em;
+  padding-right:4em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+@media screen and (max-width:700px)
+  {
+    .body-container, .bodyrow, nav ul, header, footer {
+      flex-direction:column;
+    }
+
+    #container
+    {
+      width:100%;
+      margin:0;
+    }
+
+    main {
+    background-color: #358f4f;
+  }
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #358f4f;
+  }
+
+@media only screen and (max-width: 768px) {
+  div.example {
+    font-size: 25px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<section is="top"></section>
+  <header>
+    <img src="images/savanna_banner_menu.jpg" width="100%">
+
+  </header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Savanna's Coffee House</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="savanna_aboutus.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="savanna_shop.html">Shop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="savanna_menu.html">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="savanna_events.html">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="savanna_contact.html">Contact</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div> <!--closes nav div-->
+</nav>
+
+<div class="row">
+<h1><strong>* Now Offering Carry-Out *</strong></h1>
+<h2>We offer a wide variety of food and drinks.</h2>
+<h4>Chow down on a variety of sandwiches, soups, and an entire pastry case of desserts. New treats available daily!</h4>
+<h5>Of course, we also have our signature coffees served hot or iced and made to order!</h5>
+</div><!--closes first row-->
+
+  <div class="row">
+    <div class="col-12 d-flex flex-wrap align-content-center justify-content-center">
+      <img src="images/pic_coffee_beverage.jpg" width="100%" height="100%" alt="Coffee Bean Beverage Banner"></div>
+    <div class="col-sm-3 d-flex flex-wrap align-content-center justify-content-center">
+      <img src="images/pic_coffee_latte.jpg" width="100%" height="100%" alt="Coffee Cup Latte Art"></div>
+    <div class="col-sm-9 d-flex flex-wrap align-content-center justify-content-center">
+            <ul style="list-style-type:none;">
+            <li>Hot Chocolate</li>
+            <li>Chai Tea</li>
+            <li>Frappe</li>
+            <li>Espresso</li>
+            <li>Fresh Roasted Coffee</li>
+          </ul>
+    </div><!--closes list div-->
+  </div><!--closes row div-->
+
+  <div class="row">
+    <div class="col-sm-12 d-flex flex-wrap text-align-center align-content-center justify-content-center">
+      <img src="images/pic_wine_Selection.jpg" width="100%" height="100%" alt="Wine Selection Banner">
+    </div>
+    <div class="col-sm-3 d-flex flex-wrap align-content-center justify-content-center">
+      <img src="images/pic_wine_red.jpg" width="100%" height="100%" alt="Red Wine and Bottle">
+    </div>
+    <div class="col-sm-9 d-flex flex-wrap align-content-center justify-content-center">
+          <ul style="list-style-type:none;">
+            <li>Chardonnay</li>
+            <li>Pinot Grigio</li>
+            <li>Merlot</li>
+            <li>Cabernet Sauvignon</li>
+            <li>Be sure to ask us about our California Cellar Varietals!</li>
+          </ul>
+    </div><!--closes list div-->
+  </div><!--closes row div-->
+
+  <div class="row">
+    <div class="col-sm-12 d-flex flex-wrap text-align-center align-content-center justify-content-center">
+      <img src="images/pic_beer_bottled.jpg" width="100%" height="100%" alt="Bottled Beer Banner">
+    </div>
+    <div class="col-sm-3 d-flex flex-wrap align-content-center justify-content-center">
+      <img src="images/pic_beer_bubbles.jpg" width="100%" height="100%" alt="Picture of Beer Bubbles">
+    </div>
+    <div class="col-sm-9 d-flex flex-wrap align-content-center justify-content-center">
+          <ul style="list-style-type:none;">
+            <li>Budweiser</li>
+            <li>Bud Light</li>
+            <li>Coors / Coors Lite</li>
+            <li>Firetrucker Tropical Burn</li>
+            <li>Blue Moon</li>
+            <li>Exile Ruthie</li>
+            <li>Our beers are served in bottles only.</li>
+          </ul>
+    </div><!--closes list div-->
+  </div><!--closes row div-->
+
+<div class="row">
+  <div class="col-sm-12 d-flex flex-wrap text-align-center align-content-center justify-content-center">
+  <img src="images/pic_sandwiches_banner.jpg" width="100%" height="100%" alt="Sandwich Banner">
+  </div>
+
+    <div class="col-sm-12 d-flex flex-wrap text-align-center align-content-center justify-content-center">
+    <strong>Grilled Vegetable Panini:</strong> Tomato, Onion, Cucumber, Romaine Lettuce, Sprouts, Muenster Cheese & Basil Pesto. Served grilled on multigrain panini bread. (Make it a wrap for FREE) <strong><em>$6.99</em></strong>
+    </div>
+
+    <div class="col-sm-12 d-flex flex-wrap text-align-center align-content-center justify-content-center">
+    <strong>East Street Chicken Salad:</strong> Our FAMOUS Chicken Salad Topped with Swiss Cheese, Artisan Leaf Lettuce, and Ripe Tomato. Served on a croissant <strong><em>$6.99</em></strong>
+    </div>
+
+    <div class="col-sm-12 d-flex flex-wrap text-align-center align-content-center justify-content-center">
+    <strong>Black Russian Reuben:</strong> Toasted Black Russian Bagel Filled with Pastrami, Swiss Cheese, Sauerkraut, and Thousand Island Dressing. <strong><em>$6.99</em></strong>
+    </div>
+
+    <div class="col-sm-12 d-flex flex-wrap text-align-center align-content-center justify-content-center">
+    <strong>Key City Ham Panini:</strong> Ham, Smoked Gouda Cheese, Sliced Apple, Onion, and Sweet Chutney. Served grilled on multigrain panini bread. <strong><em>$6.99</em></strong>
+    </div>
+
+    <div class="col-sm-12 d-flex flex-wrap text-align-center align-content-center justify-content-center">
+    <strong>Black Bean Burger:</strong> Southwest Black Bean Garden Burger Topped with Cheddar Cheese, Lettuce, Tomato, Onion and Southwest Ranch Dressing on a Grilled Ciabatta Square. <strong><em>$6.99</em></strong>
+    </div>
+
+    <div class="col-sm-12 d-flex flex-wrap text-align-center align-content-center justify-content-center">
+    <strong>Panini Italiano Fresh Mozzarella:</strong> Ripe Tomatoes, Basil Pesto, and Balsamic Glaze Grilled on Multigrain Panini Bread. <strong><em>$6.99</em></strong>
+    </div>
+</div><!--closes row-->
+
+<div class="row">
+  <div class="col-sm-12 d-flex flex-wrap text-align-center align-content-center justify-content-center">
+  <img src="images/pic_soups_banner.jpg" width="100%" height="100%" alt="Soup Banner">
+  </div>
+
+    <div class="col-sm-12 d-flex flex-wrap text-align-center align-content-center justify-content-center">
+    <p class="underline">Try Savanna’s Signature Soup:</p> 
+    <p>Our FAMOUS Roasted Red Pepper and Gouda.</p>
+    </div>
+
+    <div class="col-sm-12 d-flex flex-wrap text-align-center align-content-center justify-content-center">
+      <ul style="list-style-type:none;">
+    <li><strong>Soup of the Day:</strong></li> 
+    <li>Always Changing with the Season. Great with a Salad or Sandwich!</li>
+    <li><strong> Bowl:</strong> <em>$4.99</em> <strong> Cup: </strong> <em>$3.99</em></li>
+  </ul>
+    </div>
+
+    <div class="col-sm-12 d-flex flex-wrap text-align-center align-content-center justify-content-center">
+      <ul style="list-style-type:none;">
+     <li><strong>Soup & Sandwich:</strong></li>
+     <li>Choice of Soup and Half Sandwich.</li> 
+     <li>(no wraps, bagels or croissants as 1/2 sandwiches)</li> 
+     <li><strong>$7.29</strong></li>
+   </ul>
+    </div>
+
+    <div class="col-sm-12 d-flex flex-wrap text-align-center align-content-center justify-content-center">
+      <ul style="list-style-type:none;">
+    <li><strong> Soup & Salad:</strong> </li>
+      <li><strong> Choice of Soup and Any Half Salad.</strong></li>
+        <li><strong>$7.29</strong></li>
+      </ul>
+    </div>
+</div><!--closes row-->
+
+
+<section is="#bakery"></section>
+
+  <div class="row">
+    <div class="col-sm-12 d-flex flex-wrap text-align-center align-content-center justify-content-center">
+      <img src="images/pic_desserts_banner.jpg" width="100%" height="100%" alt="Cupcake Desserts Banner">
+    </div>
+    <div class="col-sm-3 d-flex flex-wrap align-content-center justify-content-center">
+      <img src="images/pic_desserts_trio.jpg" width="100%" height="100%" alt="Trio of Chocolate Treats">
+    </div>
+    <div class="col-sm-9 d-flex flex-wrap align-content-center justify-content-center">
+          <ul style="list-style-type:none;">
+            <li>Yogurt</li>
+            <li>Muffins & Cinnamon Rolls</li>
+            <li>Quiche</li>
+            <li>Cigars</li>
+            <li>Pastries & Strudels</li>
+            <li>Enjoy the Ever Changing & Always Tasty – <strong>BAKERY CASE!</strong></li>
+          </ul>
+    </div><!--closes list div-->
+  </div><!--closes row div-->
+
+  <div class="row">
+<img src="images/coffee11.jpg" alt="Musician on foggy stage with Guitar" width="100%">
+</div>
+
+<footer>
+  <div class="row">
+    <div class="col-sm-4">
+  <address>
+    <strong>Savanna’s Coffee House</strong> <br>
+    604 24th Street <br>
+    St. Paul, Minnesota<br>
+    United States<br>
+    702-971-1154<br>
+  </address>
+</div><!--closes col1-->
+
+<div class="col-sm-4">
+          <p><a href="https://www.savannahcoffee.com/">
+         <img alt="https://www.savannahcoffee.com/" src="images/savannas_record_logo.png" width="160" height="160" alt="Savanna Coffee House Logo"></a></p>
+</div><!--closes col2-->
+
+<div class="col-sm-4">
+<address>
+HOURS<br>
+<br>
+Sun: 7 AM - 9 PM<br>
+M – Th: 6 AM to 10 PM<br>
+Fri: 6 AM to 11 PM<br>
+Sat: 6:30 AM to 11 PM<br>
+</address>
+</div><!--closes col3-->
+
+</div><!--closes address div-->
+
+</footer>
+<a href="#top">Go to Top of Page</a>
+</div><!--closes whole site container-->
+</body>
+</html>
+
