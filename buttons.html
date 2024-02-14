@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Multiple Button Styles</title>
+    <style>
+body {
+  background: rgb(30, 30, 30);
+  text-align: center;
+  padding: 36px;
+  color:white;
+  font-size: 18px;
+}
+.h1 {
+    margin-top: 50px;
+}
+div {
+    padding: 50px;
+    margin:30px;
+    border-style: groove;
+    border-color: rgb(74, 74, 74);
+}
+.round {
+    font-size: 24px;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 60px;
+    border: 0px;
+}
+.action {
+  background-color: rgb(137, 26, 12);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  border: 0;
+  font-size: 24px;
+}
+.action:hover {
+  color: rgb(49, 49, 49);
+  background-color: rgb(246, 219, 87);
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 15px #cccccc;
+}
+.jump {
+    font-size: 24px;
+    background-color: rgb(101, 174, 45);
+    font-weight: bold;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 60px;
+    border: 3px;
+    border-color: yellowgreen;
+}
+.jump:hover {
+  box-shadow: yellow 0 4px 8px, yellow 0 10px 20px -10px, #e9380b 0 -3px 0 inset;
+  transform: translateY(-10px);
+}
+.gradient-box {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+}
+.gradient {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #b948f5 0, #6254ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+.gradient:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+.gradient:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.gradient:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(5px);
+}
+.expand {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #020202;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+}
+@media (min-width: 768px) {
+    .expand {
+    padding: 19px 32px;
+  }
+}
+.expand:before,
+.expand:after {
+  border-radius: 80px;
+}
+.expand:before {
+  background-color: rgba(163, 246, 248, 0.32);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+.expand:after {
+  background-color: initial;
+  background-image: linear-gradient(92.83deg, #26e6ff 0, #acf9e2 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+.expand:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+}
+.expand:active:not(:disabled) {
+  color: #ccc;
+}
+.expand:active:not(:disabled):after {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #26e6ff 0, #acf9e2 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+.expand:disabled {
+  cursor: default;
+  opacity: .24;
+}
+.hallow {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: Eina01,sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+}
+@media (min-width: 768px) {
+  .button-78 {
+    padding: 19px 32px;
+  }
+}
+.hallow:before,
+.hallow:after {
+  border-radius: 80px;
+}
+.hallow:before {
+  background-image: linear-gradient(92.83deg, #f94e79 0, #c40aab 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+.hallow:after {
+  background-color: initial;
+  background-image: linear-gradient(#540f45 0, #0c0d0d 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+.hallow:hover:not(:disabled):before {
+  background: linear-gradient(92.83deg, #f94e79 0, #c40aab 100%);
+}
+.hallow:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+.hallow:active:not(:disabled) {
+  color: #ccc;
+}
+.hallow:active:not(:disabled):before {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #f94e79 0, #c40aab 100%);
+}
+.hallow:active:not(:disabled):after {
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+.hallow:disabled {
+  cursor: default;
+  opacity: .24;
+}
+    </style>
+</head>
+<body>
+    <h1>So Many Buttons</h1>
+    <div class="container">
+        <p>Here is a Basic Button.
+        <button>Click Me</button>
+        </p>
+        </div>
+        <div>
+        <p>Here are basic bootstrap buttons:</p>
+        <p>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-link">Link</button>
+        </p>
+        </div>
+        <div>
+        <p>Basic Rounded Button:</p>
+        <p>
+            <button class="round">Rounded Button</button>
+        </p>
+    </div>
+    <div>
+        <p>Classic Hover Button:</p>
+        <button class="action">Hover Over Me</button>
+    </div>
+    <div>
+        <p>Classic Movement Button:</p>
+        <button class="jump">Hover Over Me and I Jump</button>
+    </div>
+    <div class="gradient-box">
+        <p>Gradient + Movement Button:</p>
+        <p>
+            <button class="gradient">Enhanced Hover</button>
+        </p>
+    </div>
+    <div>
+        <p>Hover Over Expand Button:</p>
+        <button class="expand" role="button">Hover Over Me</button>
+    </div>
+    <div>
+        <p>Hallow Fill Button:</p>
+        <button class="hallow" role="button">Hover Over Me</button>
+    </div>
+</body>
+</html>
