@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WDV101 Intro HTML and CSS</title>
+
+<style>
+
+	form	{
+		width:600px;
+		margin:auto;
+		background-color:lightblue;	
+		padding-left: 20px;
+	}
+	
+	form legend	{
+		font-size:larger;
+		text-align:center;
+	}
+
+
+</style>
+
+</head>
+
+<body>
+<h1>WDV101 Intro HTML and CSS</h1>
+<h2>UNIT 5 - Lesson 2 Server Side Forms</h2>
+<p>This is an example input form that will demonstrate how a form connects to a server side process.</p>
+<form id="form1" name="form1" method="post" action="demonstrateFormHandler.php">
+
+  <legend>Example Form</legend>  <!-- start of the form -->
+
+  <p>
+      <label for="first_name">First Name:</label> <!-- first name field-->
+    <input type="text" name="first_name" id="first_name" />
+  </p>
+
+  <p>
+      <label for="last_name">Last Name:</label> <!-- last name field-->
+    <input type="text" name="last_name" id="last_name" />
+  </p>
+
+  <p>
+     <label for="email_address">Email:</label> <!-- email address field-->
+     <input type="email_address" id="email_address" name="email_address" placeholder="email@mail.com">  <!-- has the little grey example email in the field-->
+  </p>
+
+  <p>
+      <label for="school_name">School Name:</label> <!-- school name field -->
+    <input type="text" name="school_name" id="school_name" />
+  </p>
+
+  <div class="academic_options">
+    <p>Current Academic Standing:</p>
+    <p>
+        <input type="radio" value="high school student" name="academic_standing" id="high_school"> <!-- radio buttons for academic standing-->
+        <label for="high_school">High School</label> <!-- radio button 1-->
+    </p>
+
+    <p>
+        <input type="radio" value="freshman" name="academic_standing" id="freshman">
+        <label for="freshman">Freshman</label><!-- radio button 2-->
+    </p>
+
+    <p>
+        <input type="radio" value="sophomore" name="academic_standing" id="sophomore">
+        <label for="sophomore">Sophomore</label><!-- radio button 3-->
+    </p>
+  </div>
+
+  <p>
+     <label for="student_major">Select your major:</label> <!-- drop down box-->
+     <select name="student_major" id="student_major">
+         <option value="">Choose your major</option><!--default field-->
+         <option value="CIS">Computer Information Systems</option><!-- drop down option 1-->
+         <option value="GRD">Graphic Design</option><!-- drop down option 2-->
+         <option value="WDV">Web Development</option><!-- drop down option 3-->
+     </select>
+  </p>
+<div class="additional_options"> <!-- extra FoRm OpTiOnS-->
+
+      <p>
+          <input type="checkbox" value="yes" name="contact_program_info" id="contact_program_info"> <!-- checkbox-->
+          <label>Please contact me with program information</label> <!-- yes I would like to be contact with program info-->
+      </p>
+
+      <p>
+          <input type="checkbox" value="yes" name="contact_advisor" id="contact_advisor"> <!-- checkbox-->
+          <label>I would like to contact a program advisor</label><!-- yes I would like a program advisor over for dinner and a movie how did you know?-->
+      </p>
+
+  </div>
+
+  <p>
+      <label>Comments:</label>
+      <textarea value="comments" name="comments" id="comments"></textarea> <!-- comment text field-->
+  </p> <!-- never give me these, I will fill them with 1,000s of words.-->
+
+  <p>
+    <input type="submit" name="button" id="button" value="Submit" /><!--submit button-->
+    <input type="reset" name="button2" id="button2" value="Reset" /><!--reset button-->
+  </p>
+
+</form>
+
+
+<p>&nbsp;</p>
+</body>
+
+</html>
