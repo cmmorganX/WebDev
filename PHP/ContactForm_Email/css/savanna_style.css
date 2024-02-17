@@ -1,0 +1,70 @@
+/* CSS Styling for Cocoa sites*/
+
+font-family: 'Montserrat', sans-serif;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+}
+
+a:hover{ 
+        color: white;
+        background-color: #ff9923; 
+    } 
+
+a:visited {
+  color: #358f4f;
+}
+
+a:active {
+  color: #ff9923;
+}
+.container {
+  font-family: 'Montserrat', sans-serif;
+  border: 2px solid #fdbd12;
+  background-color: black;
+  padding-right: 0;
+  padding-left: 0;
+  color:#03b9fb;
+}
+
+.row, .col {
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+  text-align: center;
+}
+
+header, footer {
+  font-family: 'Montserrat', sans-serif;
+    background-color: #dc7d24;
+    text-align: center;
+    color:#ccdbb0;
+    width:100%
+}
+
+footer {
+  font-family: 'Montserrat', sans-serif;
+  border-top:2px solid #af7047;
+  display: flex;
+  justify-content: space-around;
+  padding-left:4em;
+  padding-right:4em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+address {
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  display: block;
+}
+
+a {
+  color:orange;
+  text-align:center;
+}
