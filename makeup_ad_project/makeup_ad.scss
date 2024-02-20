@@ -1,0 +1,184 @@
+$primaryColor: pink;
+$secondaryColor: white;
+
+@mixin multiColorGradient($primaryColor, $secondaryColor) {
+  background:linear-gradient(rgb(255, 177, 177),rgb(252, 233, 217));
+  background-repeat:no-repeat;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+
+body {
+    background-image: url('images/plantsite.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+
+#bannerad {
+  @include multiColorGradient($primaryColor, $secondaryColor);
+    position:relative;
+    top:9%;
+    left:24%;
+    border:solid 2px rgb(240, 20, 86);
+    width:65%;
+    height:90px;
+    overflow: hidden;
+    animation: bannergo 2s forwards;
+}
+
+@keyframes bannergo {
+  0%   {top: -200px; transform: rotateY(10deg);}
+  100% {top: 90px; transform: rotateY(360deg);}
+}
+
+  #text h1 {
+    z-index: 3;
+    position:absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left:150px;
+    font-size: 40px;
+    line-height: 40px;
+    animation: textgo 10s 1 forwards;
+  }
+
+  @keyframes textgo {
+    0%   {color:rgb(255, 255, 255); opacity: 1; transform: rotateX(10deg);}
+    50%   {opacity: 0.5;}
+    100% {color: rgb(209, 19, 108); opacity: 1; transform: rotateX(360deg);}
+  }
+
+    #stick1 {
+      position:absolute;
+      height:100px;
+      width:100px;
+      animation: lip1 3s 1 forwards;
+    }
+
+    @keyframes lip1 {
+      0%   {left: -100px; opacity: 0; transform: rotateY(10deg);}
+      100% {left: 600px; opacity: 1; transform: rotateY(180deg);}
+    }
+
+    #stick2 {
+      z-index: 1;
+      position:absolute;
+      height:100px;
+      width:100px;
+      animation: lip2 4s 1 forwards;
+    }
+
+    @keyframes lip2 {
+      0%   {left: -100px; opacity: 0; transform: rotateY(10deg);}
+      100% {left: 550px; opacity: 1; transform: rotateY(180deg);}
+    }
+
+    #stick3 {
+      z-index: 1;
+      position:absolute;
+      height:100px;
+      width:100px;
+      animation: lip3 5s 1 forwards;
+    }
+
+    @keyframes lip3 {
+      0%   {left: -100px; opacity: 0; transform: rotateY(10deg);}
+      100% {left: 500px; opacity: 1; transform: rotateY(180deg);}
+    }
+
+    #stick4 {
+      z-index: 1;
+      position:absolute;
+      height:100px;
+      width:100px;
+      animation: lip4 6s 1 forwards;
+    }
+
+    @keyframes lip4 {
+      0%   {left: -100px; opacity: 0; transform: rotateY(10deg);}
+      100% {left: 450px; opacity: 1; transform: rotateY(180deg);}
+    }
+
+    #stick5 {
+      z-index: 1;
+      position:absolute;
+      height:100px;
+      width:100px;
+      animation: lip5 7s 1 forwards;
+    }
+
+    @keyframes lip5 {
+      0%   {left: -100px; opacity: 0; transform: rotateY(10deg);}
+      100% {left: 400px; opacity: 1; transform: rotateY(180deg);}
+    }
+
+    #confetti {
+      height:920px;
+      width:728px;
+      background-image: url(images/confetti.png);
+      position:absolute;
+      z-index: 3;
+      left:0;
+      right:0;
+      animation: conf1 6s linear infinite;
+    }
+
+    @keyframes conf1
+{ 0% {
+  transform: translateY(-900px);}
+  100% {transform: translateY(900px)}
+}
+
+
+
+.button {
+  position:absolute;
+  z-index:4;
+  top:31px;
+  left:20px;
+  background-color: #f41e30;
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  font-size: 13px;
+  margin: 4px 2px;
+  opacity: 0.3;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 15px;
+  animation: buttonop 13s 1 forwards;
+}
+
+.button:hover {opacity: 1}
+
+@keyframes buttonop {
+  0%   {transform: rotateY(10deg);}
+  100% {transform: rotateY(360deg);}
+}
+
+@media (max-width: 400px) {
+  #column {
+      width: 50%;
+      height:50%;
+  }
+}
+
+@media (max-width: 400px) {
+  #bannerad {
+    position:relative;
+    top:7%;
+    left:4%;
+    width:95%;
+    height:80px;
+  }
+}
