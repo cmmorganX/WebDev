@@ -1,0 +1,222 @@
+body {
+  background-image: url("images/starfall.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#bannerad {
+  position: relative;
+  top: 16%;
+  border: solid 1px #ee1212;
+  background: #000 url(images/cereal_background.png);
+  width: 240px;
+  height: 400px;
+  overflow: hidden;
+}
+
+#bowl {
+  position: absolute;
+  height: 200px;
+  width: 240px;
+  margin-top: 200px;
+  background: url(images/bowl_cereal_chopped.png) no-repeat center bottom;
+  -webkit-animation: bowlup 4s forwards;
+          animation: bowlup 4s forwards;
+}
+
+@-webkit-keyframes bowlup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes bowlup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+#cereal {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  -webkit-animation: cerealdrop 3s 2 forwards;
+          animation: cerealdrop 3s 2 forwards;
+}
+
+@-webkit-keyframes cerealdrop {
+  0% {
+    top: -200px;
+    opacity: 1;
+    -webkit-transform: rotateY(10deg);
+            transform: rotateY(10deg);
+  }
+  100% {
+    top: 250px;
+    opacity: 0;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes cerealdrop {
+  0% {
+    top: -200px;
+    opacity: 1;
+    -webkit-transform: rotateY(10deg);
+            transform: rotateY(10deg);
+  }
+  100% {
+    top: 250px;
+    opacity: 0;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+#cereal2 {
+  position: absolute;
+  margin-left: 75px;
+  height: 100px;
+  width: 100px;
+  -webkit-animation: cerealdrop2 4s 2 forwards;
+          animation: cerealdrop2 4s 2 forwards;
+}
+
+@-webkit-keyframes cerealdrop2 {
+  0% {
+    top: -200px;
+    opacity: 1;
+    -webkit-transform: rotateX(10deg);
+            transform: rotateX(10deg);
+  }
+  100% {
+    top: 250px;
+    opacity: 0;
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+}
+
+@keyframes cerealdrop2 {
+  0% {
+    top: -200px;
+    opacity: 1;
+    -webkit-transform: rotateX(10deg);
+            transform: rotateX(10deg);
+  }
+  100% {
+    top: 250px;
+    opacity: 0;
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+}
+
+#cereal3 {
+  position: absolute;
+  margin-left: 140px;
+  height: 100px;
+  width: 100px;
+  -webkit-animation: cerealdrop3 5s 2 forwards;
+          animation: cerealdrop3 5s 2 forwards;
+}
+
+@-webkit-keyframes cerealdrop3 {
+  0% {
+    top: -200px;
+    opacity: 1;
+    -webkit-transform: rotateY(10deg);
+            transform: rotateY(10deg);
+  }
+  100% {
+    top: 250px;
+    opacity: 0;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes cerealdrop3 {
+  0% {
+    top: -200px;
+    opacity: 1;
+    -webkit-transform: rotateY(10deg);
+            transform: rotateY(10deg);
+  }
+  100% {
+    top: 250px;
+    opacity: 0;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+#text h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5a47fd;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  text-shadow: 0px 0px 5px #fff;
+  -webkit-animation: h1-animation 8s 1 ease-in-out;
+          animation: h1-animation 8s 1 ease-in-out;
+}
+
+@-webkit-keyframes h1-animation {
+  0% {
+    opacity: 0;
+    color: red;
+  }
+  25% {
+    opacity: 0.5;
+    color: #ff2600;
+  }
+  50% {
+    opacity: 0.5;
+    color: #ffec40;
+  }
+  75% {
+    opacity: 0.75;
+    color: #14b879;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+    color: #124ae6;
+  }
+}
+
+@keyframes h1-animation {
+  0% {
+    opacity: 0;
+    color: red;
+  }
+  25% {
+    opacity: 0.5;
+    color: #ff2600;
+  }
+  50% {
+    opacity: 0.5;
+    color: #ffec40;
+  }
+  75% {
+    opacity: 0.75;
+    color: #14b879;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+    color: #124ae6;
+  }
+}
+/*# sourceMappingURL=ad.css.map */
