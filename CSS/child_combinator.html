@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title> Child Combinator Page ></title>
+
+<style>
+
+.petunia > li {
+background-color: #f3fc76;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding: 40px;
+    font-size: 30px;
+  }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Child Combinator (element > element)</h2>
+
+<ul class="petunia">
+    <li>This is not a list</li>
+    <li id="whale">
+        A jaunty little tune as follows:
+        <ul>
+            <li>I've got a lovely bunch of coconuts.</li>
+            <li>Dee dee dee dee lee.</li>
+            <li id="magrathea">There they are a-standing in a row.</li>
+            <li>Big ones. Small ones. Some as big as a head.</li>
+        </ul>
+    </li>
+</ul>
+
+<ul>
+    <li>I am actually a list.</li>
+    <ol>
+        <li>I don't have coconuts.</li>
+        <li>No humming.</li>
+        <li>No standing in rows.</li>
+        <li>There are no coconuts here. Stop asking.</li>
+    </ol>
+</ul>
+
+<a href="gensibling_combinator.html">General Sibling Page</a>
+
+</div>
+</body>
+</html>

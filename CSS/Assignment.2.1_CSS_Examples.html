@@ -1,0 +1,166 @@
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>Assignment: 2-1</title>
+<style>
+
+body {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container {
+	margin:50px;
+	padding:24px;
+	font-size: 35px;
+	font-style: oblique;
+	background-image: radial-gradient(circle, #ffd4ea, white);
+}
+
+h1 {
+  color: #f42c93;
+  font-weight: 900;
+}
+
+h4 {
+  color: #ff9ed0;
+}
+
+div {
+  background-image: radial-gradient(circle, #ffb7dc, white);
+  margin: 40px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+p {
+	color:#9b165f;
+  text-align: justify;
+}
+
+.button {
+  background-color: #c2ffff;
+  border-radius: 30px;
+  background: #ff6bb7;
+  padding: 40px; 
+  width: 300px;  
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.buttonshadow {
+   box-shadow: 0 5px 7px 0 #b2809a, 0 8px 15px 0 #b2809a;
+}
+
+.column2 {
+	column-count: 2;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #b2809a;
+  text-align: center;
+  border-radius: 16px;
+  padding: 10px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+      /* unvisited link */
+      a:link {
+        color: #f93298;
+      }
+      /* visited link */
+      a:visited {
+        color: #f93298;
+      }
+      /* mouse over link */
+      a:hover {
+        color: #ffd4ea;
+      }
+      /* selected link */
+      a:active {
+        color: #ffd4ea;
+      }
+
+</style>
+</head>
+<body>
+
+<div id="container">
+
+<h1>Assignment: 2-1</h1>
+<h4>Gradients, Buttons - Rounded with Shadow, Pagination, Column Display, and one random Advanced CSS</h4>
+
+<button class="button">Button</a></button>
+
+<button class="button buttonshadow">Shadow Button</button>
+
+<div class="column2">
+	<p>As she sat watching the world go by, something caught her eye. It wasn't so much its color or shape, but the way it was moving. She squinted to see if she could better understand what it was and where it was going, but it didn't help. As she continued to stare into the distance, she didn't understand why this uneasiness was building inside her body. She felt like she should get up and run. If only she could make out what it was. At that moment, she comprehended what it was and where it was heading, and she knew her life would never be the same. It was their first date and she had been looking forward to it the entire week. She had her eyes on him for months, and it had taken a convoluted scheme with several friends to make it happen, but he'd finally taken the hint and asked her out. After all the time and effort she'd invested into it, she never thought that it would be anything but wonderful. It goes without saying that things didn't work out quite as she expected. She nervously peered over the edge. She understood in her mind that the view was supposed to be beautiful, but all she felt was fear. There had always been something about heights that disturbed her, and now she could feel the full force of this unease. She reluctantly crept a little closer with the encouragement of her friends as the fear continued to build. She couldn't help but feel that something horrible was about to happen.</p>
+</div><!--closes div column2-->
+
+<div class="flex-container">
+	<div class="pagination">
+		<a href="#">&laquo;</a>
+		<a class="active" href="Assignment.2.1_CSS_Examples.html">1</a>
+		<a href="css_attribute_form.html">2</a>
+		<a href="descendant_combinator.html">3</a>
+		<a href="#">&raquo;</a>
+	</div><!--close pagination div-->
+</div>
+
+<div class="tooltip">A Pale Rose
+  <span class="tooltiptext">Opens with the Dawn</span>
+</div><!--closes tooltip div-->
+
+</body>
+</html>
