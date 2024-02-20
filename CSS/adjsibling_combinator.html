@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title> Adjacent Sibling Combinator Page ></title>
+
+<style>
+
+#magrathea + li {
+background-color: #e176fc;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding: 40px;
+    font-size: 30px;
+  }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Adjacent Sibling Combinator (element + element)</h2>
+
+<ul class="petunia">
+    <li>This is not a list</li>
+    <li id="whale">
+        A jaunty little tune as follows:
+        <ul>
+            <li>I've got a lovely bunch of coconuts.</li>
+            <li id="magrathea">Dee dee dee dee lee.</li>
+            <li>There they are a-standing in a row.</li>
+            <li>Big ones. Small ones. Some as big as a head.</li>
+        </ul>
+    </li>
+</ul>
+
+<ul>
+    <li>I am actually a list.</li>
+    <ol>
+        <li>I don't have coconuts.</li>
+        <li>No humming.</li>
+        <li>No standing in rows.</li>
+        <li>There are no coconuts here. Stop asking.</li>
+    </ol>
+</ul>
+
+<a href="descendant_combinator.html">Descendant Combinator Page</a>
+
+</div>
+</body>
+</html>
