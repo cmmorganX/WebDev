@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+.container {
+    max-width: fit-content;
+}
+</style>
+<body>
+
+<div class="container mt-3">
+  <h2>Basic Alert</h2>
+  <p>Here is an alert using the red bg color.</p>
+  <div class="alert alert-danger">
+    <strong>Warning!</strong> Be aware of alerts on a page!!
+    </div>
+    <br>
+    <h2>Alert with a Link</h2>
+<div class="alert alert-info">
+    <strong>Coupon Alert!</strong> Click on this link to <a href="#" class="alert-link">save 30%</a>!
+  </div>
+  <br>
+  <h2>You can close this Alert.</h2>
+  <div class="alert alert-warning alert-dismissible">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    <strong>Attention!</strong> Click the "X" to close this alert and refresh the page to see it again.
+  </div>
+  <br>
+  <h2>These alerts have the fade effect when you close them.</h2>
+  <div class="alert alert-primary alert-dismissible fade show">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    <strong>Alert 1</strong> Clicking the "X" will close this alert with a fade.
+  </div>
+  <div class="alert alert-secondary alert-dismissible fade show">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    <strong>Alert 2</strong> will close with a short effect.
+  </div>
+  <div class="alert alert-success alert-dismissible fade show">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    <strong>Alert 3</strong> Click the "X" and see it fade away.
+</body>
+</html>
