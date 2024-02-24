@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby's First Javascript</title>
+</head>
+<body>
+    <h1>Javascript Coding</h1>
+    <p>The basics of Javascript.</p>
+    <script>
+    let name = 'Courtney'; //string literal
+    let age = 30; //number literal
+    let isApproved = true; //boolean literal
+    let firstName = undefined; //not definition
+    let lastName = null; //clear the value of a variable
+    let selectedColor = 'red'; //the selectedColor will always be red
+
+    let person = {
+        name: 'Courtney',
+        age: 30
+    };
+
+//dot notation
+person.name = 'John';
+
+//bracket notation
+person['name'] = 'Mary';
+
+//dot notation is clear and clean code, but bracket has its uses
+
+    console.log(person);
+    </script>
+</body>
+</html>
