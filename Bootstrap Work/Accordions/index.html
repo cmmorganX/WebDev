@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Accordions</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        hr {
+            margin: 50px;
+        }
+        h2:first-child{
+            padding-top:45px;
+        }
+        p {
+            margin:20px;
+        }
+    </style>  
+    </head>
+<body>
+<div class="container mt-3 text-center">
+<h2>Default - Hide Content</h2>
+<p>Accordion that starts off with the content hidden and you can show it with the button.</p>
+<a href="#demo" class="btn btn-info" data-bs-toggle="collapse">Simple collapsible</a>
+<div id="demo" class="collapse">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</div>
+<hr>
+<h2>Default - Show Content</h2>
+<p>Accordion that starts off with the content shown and you can hide it with the button.</p>
+<p>Click on the button to toggle between showing and hiding content.</p>
+<button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#demo">Simple collapsible</button>
+<div id="demo" class="collapse show">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</div>
+<hr>
+<h2>Accordion with Open and Closed Collapsibles</h2>
+<p>One Card starts off open while the other two start off closed.</p>
+<p>Note: Each button/header opens and closes the content.</p>
+<div id="accordion">
+  <div class="card">
+    <div class="card-header bg-info">
+      <a class="btn btn-info" data-bs-toggle="collapse" href="#collapseOne">
+        Cupcake Ipsum - Sugary Sweet Nonsense
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+      <div class="card-body">
+        Soufflé lemon drops pudding jujubes dragée brownie. Bonbon chocolate cake chocolate jujubes cookie liquorice sesame snaps tootsie roll. Cake ice cream candy gummi bears jujubes. Tart cookie biscuit tootsie roll gingerbread wafer gingerbread. Dessert sugar plum sugar plum gummi bears donut muffin. Cheesecake cake chocolate bar gingerbread danish. Donut liquorice wafer apple pie lemon drops macaroon. Jelly beans chupa chups topping sweet roll cookie gummi bears icing. Pudding chocolate jelly beans candy canes chocolate. Pie bonbon lollipop pie cake gummies. Lollipop macaroon jelly beans cake donut. Candy canes sweet roll dragée tart gingerbread danish sweet roll. Caramels muffin bear claw chupa chups sesame snaps tiramisu shortbread wafer cupcake.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-success">
+      <a class="collapsed btn btn-success" data-bs-toggle="collapse" href="#collapseTwo">
+      Farm Ipsum - Grow Your Own Nonesense
+    </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        Garden wheat oats at augers. Gate wind with feed troughs cheep, or cabbage with pumpkin goat, raccoons rhubarb outhouse a, apples berries corn. Turkey daisys horses and storage shed, troughs feed bale manure, is garden wheat oats at augers. Gourds utters at welding equipment a oink oink haybine. veterinarian blue berries cattle jelly canning. Coo with rabbits ect. Goose hammers cattle rats in crows. Coo with rabbits ect. Post pounder calf, hay or duck is, tool shed horse. Augers oats hen cowpies. Straw augers beef kettle our crickets. Gobbl.      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-light">
+      <a class="collapsed btn btn-light" data-bs-toggle="collapse" href="#collapseThree">
+      Fish Ipsum - Smelly Ocean Nonsense
+    </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        Mooneye lanternfish; glowlight danio, "rockling great white shark escolar wallago." Longfin smelt lake whitefish smoothtongue cookie-cutter shark footballfish smalleye squaretail pigfish kaluga flying characin channel bass bluntnose knifefish. Quillfish seahorse tetra elephantnose fish buri, bala shark European perch! Pipefish sailfin silverside tiger shovelnose catfish sawtooth eel ballan wrasse longnose sucker ribbonfish yellowbanded perch straptail. Mooneye titan triggerfish tenpounder--bass Rabbitfish walleye cuckoo wrasse Oregon chub. Roanoke bass, halibut rudd suckermouth armored catfish bangus pencil catfish pilot fish sandbar shark blue shark, "pelican eel." Hagfish catla wahoo horn shark rivuline redside dab blackfish eel wrasse, yellow weaver goldfish cobbler sweeper whiting, "vimba chub gar." Death Valley pupfish sarcastic fringehead hoki orbicular velvetfish golden shiner.      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-warning">
+      <a class="collapsed btn btn-warning" data-bs-toggle="collapse" href="#collapseFour">
+      Cheese Ipsum - Big Gouda Nonesense
+    </a>
+    </div>
+    <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        Gouda stilton cheddar when the cheese comes out everybody's happy cauliflower cheese queso queso port-salut. Emmental fondue monterey jack stinking bishop cheese strings airedale cow cheese and biscuits. Cheesy feet caerphilly squirty cheese airedale. Bocconcini cheese strings paneer. Edam rubber cheese airedale cream cheese pecorino blue castello cheddar blue castello. Cheese triangles cheese strings when the cheese comes out everybody's happy swiss caerphilly manchego monterey jack rubber cheese. Ricotta melted cheese rubber cheese when the cheese comes out everybody's happy.      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-danger">
+      <a class="collapsed btn btn-danger" data-bs-toggle="collapse" href="#collapseFive">
+        Bacon Ipsum - Meat Filled Nonesense
+      </a>
+    </div>
+    <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        Turducken salami buffalo landjaeger brisket sausage tongue strip steak filet mignon ribeye. Kevin alcatra t-bone cow. Tail filet mignon pig frankfurter tenderloin. Frankfurter rump corned beef pork loin t-bone leberkas alcatra turkey. Andouille capicola pastrami kevin corned beef sausage cow chicken rump pork loin kielbasa sirloin picanha. Prosciutto tri-tip tenderloin shank filet mignon landjaeger sirloin t-bone frankfurter ham picanha boudin sausage.      </div>
+    </div>
+  </div>
+</div>
+<hr>
+</div>   
+</body>
+</html>
