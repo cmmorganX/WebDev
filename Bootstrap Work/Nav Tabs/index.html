@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nav Tabs</title>
+        <head>
+          <title>Bootstrap Example</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        hr {
+            margin: 50px;
+        }
+        h2:first-child{
+            padding-top:45px;
+        }
+        p {
+            margin:20px;
+        }
+    </style>  
+    </head>
+<body>
+  <div class="container mt-3">
+    <h2>Nav Tabs</h2>
+    <p>Basic Nav using tabs with active and disabled example links.</p>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Example Link Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Example Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Example Link 3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Example Link Disabled</a>
+      </li>
+    </ul>
+<hr>
+<p>Justified Nav Tabs</p>
+  <ul class="nav nav-tabs nav-justified">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Example Link Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Example Link 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Example Link 3</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Example Link Disabled</a>
+    </li>
+  </ul>
+  <hr>
+  <h2>Nav Tabs with Dropdown</h2>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Dropdown</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Example Link 1</a></li>
+        <li><a class="dropdown-item" href="#">Example Link 2</a></li>
+        <li><a class="dropdown-item" href="#">Example Link 3</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+  <hr>
+  <h2>Toggleable Tabs</h2>
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu1">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu2">About</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      <h3>Bob Ross Explains our HOME tab</h3>
+      <p>Talent is a pursued interest. That is to say, anything you practice you can do. If you do too much it's going to lose its effectiveness. Anytime you learn something your time and energy are not wasted.</p>
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>Bob Ross Explains the Contact Us Section</h3>
+      <p>There are no mistakes. You can fix anything that happens. Here's another little happy bush I sincerely wish for you every possible joy life could bring. By now you should be quite happy about what's happening here. Let your imagination be your guide.</p>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3>Bob Ross Explains Our Company</h3>
+      <p>Now let's put some happy little clouds in here. Trees grow in all kinds of ways. They're not all perfectly straight. Not every limb is perfect. The man who does the best job is the one who is happy at his job. We tell people sometimes: we're like drug dealers, come into town and get everybody absolutely addicted to painting. It doesn't take much to get you addicted. Give him a friend, we forget the trees get lonely too. Let's put some happy little bushes on the other side now.</p>
+    </div>
+  </div>
+</div>
+
+<hr>
+</div>   
+</body>
+</html>
