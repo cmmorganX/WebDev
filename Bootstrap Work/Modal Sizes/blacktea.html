@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Modal Sizes</title>
+        <head>
+          <title>Full Page with Different Sizes of Modals</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        hr {
+            margin: 25px;
+        }
+        h2:first-child{
+            padding-top:15px;
+        }
+        p {
+            margin:20px;
+        }
+        .highlight {
+            background-color: white;
+            color:rgb(59, 59, 59);
+            padding: 10px;
+            opacity: 0.8;
+        }
+        #teacups .carousel-item img {
+            object-fit: cover;
+            object-position: center;
+            height: 180px;
+            overflow: hidden;
+        }
+    </style>  
+    </head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="teapour_logo.png" alt="Logo" style="width:50px;" class="rounded-pill">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="greentea.html">Green Tea</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="whitetea.html">White Tea</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blacktea.html">Black Tea</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-info text-light" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<div id="teacups" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#teacups" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#teacups" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#teacups" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="teaA.png" alt="thick tea in an ornate teacup near a candle and a crystal" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <H3><span class="highlight">English Breakfast Tea</span></h3>
+        <p><span class="highlight">Full-bodied, robust, and strong flavor.</span></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="teaB.png" alt="a delicately painted teacup on a saucer" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <H3><span class="highlight">Russian Caravan Tea</span></h3>
+        <p><span class="highlight">Mostly consists of at least two tea types.</span></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="teaC.png" alt="white teacup trimmed with delicately painted flowers and gold paint" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <H3><span class="highlight">Söderblandning Tea</span></h3>
+        <p><span class="highlight">Black tea blended with fruit and flowers.</span></p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#teacups" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#teacups" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<div class="container mt-3">
+  <h1>Types of Tea</h1>
+<hr>
+<h3>BLACK TEA</h3>
+<p>X-Large Modal Example</p>
+<p>When black tea oxidizes completely, it yields an amber-colored tea with a robust, rich flavor. In the majority of western nations, this type of tea is the most widely consumed, and it may be found in numerous blends, including Chai, Earl Grey, and English Breakfast.</p>
+      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">
+        Open modal
+      </button>
+    </div>
+    
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-xl">
+  <div class="modal-content">
+
+    <div class="modal-header">
+      <h4 class="modal-title">X-Large Modal Heading</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+
+    <div class="modal-body">
+      Completely oxidized tea leaves are used to make all black teas. Unlike the strong, astringent tea well-known in the other main black tea-producing nations, Chinese black teas are produced by slowly withering and oxidizing the leaves to provide a softer, more fragrant tea. Tea made from complete loose leaves is also preferred by the Chinese. The tea's flavor is largely influenced by its cultivation and processing environment. We refer to this sense of location as terroir, which is the belief that the final tea is influenced by the soil, rain, sun, moon, and climate.</div>
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+    </div>
+
+</div>
+</div>
+</div>
+
+</div>
+<hr>
+</body>
+</html>
