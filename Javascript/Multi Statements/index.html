@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Statements</title>
+</head>
+<body>
+    <h2>Multiple Statements</h2>
+
+    <p>Clicking the button will reveal two greetings.</p>
+    
+    <button type="button" onclick="myFunction()">CLICK HERE</button>
+    
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    
+    <script>
+    function myFunction() {
+      document.getElementById("demo1").innerHTML = "Welcome to Vault 76,";
+      document.getElementById("demo2").innerHTML = "We're Mighty Pleased to See You!";
+    }
+    </script>     
+</body>
+</html>
